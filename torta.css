@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap');
+/* Aqui esta a impostção da url */
+*{/* defino as margens */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* definindo a cor para o fundo do site*/
+body{ 
+    background-color: #D2D5F9;
+}
+
+/* aqui esta para imagem de inicio ela esta arredondada e a transição é de 1 segundo */
+img{
+    border-radius: 100%;
+    border: 5px solid rgb(163, 110, 163);
+    transition: all 1s ease-in-out;
+    
+}
+
+
+/* para a transição da imagem ela se torta um quadrado assim como muda a borda */
+img:hover{
+    border-radius: 10%;
+    border: 5px solid rgb(209, 26, 209);
+    transform: translateY(-30px);
+}
+
+/* imagem fica no centro */
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+/* definindo bordas */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+/* classe parte 1 sendo chamada */
+.parte1{
+    display: flex;
+    gap: 2rem;
+}
+/* classe parte dois sendo chamada */
+.parte2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+/* aqui é onde a classe parte1 e a parte2 ficam na coluna coborda roxa */
+.parte1 div,
+.parte2 div{
+    border: 1px solid rgb(68, 6, 68);
+    border-radius: 20px;
+    padding: 20px;
+}
+/*defino que o h3 h2 ficarao no centro */
+div h3, div h2{
+    display: flex;
+    justify-content: center;
+}
+/* definindo a margem de h2 */
+h2{
+    margin: 2rem 0;
+}

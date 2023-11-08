@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="torta.css"> <!-- chamo o css -->
+<script type="text/javascript" src="torta.js"></script> <!-- chamo o JS -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aqui eu chamei js com o script para fazer os botões-->
+
+    <script>  /* com o script chamei o js para fazer os botoes */
+    
+        function funcao1() {
+            alert("TORTA DE FRANGO"); /*define a função e o nome do primeiro botão*/
+        }
+
+        function funcao2(){
+            alert("OUTRA TORTA DE FRANGO"); /*defini a função e o nome do segundo botão */
+        }
+    </script>
+    <link rel="stylesheet" href="style.css"><!-- chamando o css -->
+    <!-- titulo -->
+    <title>Torta de Frango</title> 
+</head>
+
+    <!-- deixo muita divs para fazer os ajustes de colunas e imagens no css-->
+<body>
+    <!--Aqui eu deixei no centro os botoes e coloque as frases que queria-->
+    <header align="center">
+        <input type="button" onclick="funcao1()" value="click para ver uma frase" />
+        <input type="button" onclick="funcao2()" value="click para ver outra frase" />
+        <!--arrumei a fonte e deixei a cor brnca e tamanho 30 para o titulo principal mexer-->
+        <font face="arial" color="white" size="30">
+    
+            <marquee behavior="" direction="">
+                <h2>→ → Torta de Frango ← ←</h2>
+            </marquee> <!-- o masquee faz o tirulo se mexer de ponta a ponta -->
+        </font>
+    </header>
+
+    <!--aqui deixo o aviso para clicar nas imagens que são links-->
+    <h3 align="center">Clique nas imagens para mais Informações sobre utensílios usados para fazer esta receita</h3> <br>  
+
+    <section>
+        <!-- aqui coloquei as imagens e os links das paginas que as fotos representam
+        e o _blanck para abrir o ink em uma pagina separada-->
+        <div class="imagem">                  
+            <a href="https://www.magazineluiza.com.br/busca/farinha+de+trigo/" target="_blank" rel="noopener noreferrer"><img src="download (1).jfif" alt="Massa de trigo"></a>
+            <a href="https://receitatodahora.com.br/recheio-de-frango/" target="_blank" rel="noopener noreferrer"><img src="download (3).jfif" alt="Recheio de frango"></a>
+            <a href="https://www.magazineluiza.com.br/busca/forno+eletrico+black+&/" target="_blank" rel="noopener noreferrer"><img src="download (2).jfif" alt="forno"></a>
+            <a href="https://www.tudogostoso.com.br/receita/1282-torta-de-frango.html" target="_blank" rel="noopener noreferrer"><img src="download.jfif" alt="torta de frango"></a>
+            
+        </div>
+    
+        <!--h2 de ingredintes -->
+        <div>
+            <h2>Ingredientes</h2>
+        </div>
+        <div class="content">
+            <div class="parte1"> <!-- fiz classes para colocar dentro de uma coluna -->
+                <div>
+                    <h3>Recheio</h3>
+                    <ul><!-- lista não ordenada do recheio-->
+                        <li>500 g de peito de frango sem pele</li>
+                        <li>4 colheres (sopa) de óleo</li>
+                        <li>1 cebola picada</li>
+                        <li>1 xícara (chá) de ervilhas</li>
+                        <li>pimenta-do-reino a gosto</li>
+                        <li>1/2 litro de caldo de galinha</li>
+                        <li>1 dente de alho amassado</li>
+                        <li>3 tomates sem pele e sem sementes</li>
+                        <li>sal a gosto</li>
+                    </ul>
+                </div>
+                <div> <!-- lista não ordenada da massa -->
+                    <h3>Massa</h3>
+                    <ul>
+                        <li>250 ml de leite</li>
+                        <li>2 ovos</li>
+                        <li>sal a gosto</li>
+                        <li>queijo ralado a gosto</li>
+                        <li>3/4 de xícara (chá) de óleo</li>
+                        <li>1 e 1/2 xícara (chá) de farinha de trigo</li>
+                        <li>1 colher (sopa) de fermento em pó</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parte2"> <!-- fiz outra classe para fazer outra coluna no css -->
+                <h3>Modo de praparo</h3>
+                <div>
+                    <h3>Recheio</h3> <!-- lista ordenada de do recheio-->
+                    <ol>
+                        <li>Cozinhe o peito de frango no caldo até ficar macio.</li>
+                        <li>Separe 1 xícara (chá) de caldo do cozimento e reserve.</li>
+                        <li>Refogue os demais ingredientes e acrescente as ervilhas por último.</li>
+                        <li>Desfie o frango, misture ao caldo e deixe cozinhar até secar.</li>
+                    </ol>
+                    
+                </div>
+                <div>
+                    <h3>Massa</h3>
+                    
+                    <ol> <!-- lista ordenada da massa-->
+                        <li>Bata o leite, o óleo e os ovos no liquidificador em velocidade baixa.</li>
+                        <li>Acrescente aos poucos a farinha, o sal e o fermento.</li>
+                        <li>Despeje metade da massa em uma forma untada e adicione o recheio sobre ela.</li>
+                        <li>Cubra com o restante de massa e o queijo ralado.</li>
+                        <li>Leve ao forno preaquecido (180° C) até dourar.</li>
+                    </ol>
+                    <p>Após isso retire do forno e sirva-se</p>
+                    
+                </div>
+                
+                <!-- aqui fiz a tebla com o produzido e o serviço tecnico
+                decidi tamanho e deixei dentro da div para ficar alinhado no meio -->
+                <table border="3" widht="400" height="120" cellspacing="1">
+                        
+                    <tr><!-- aqui dei a cor de fundo e define que ele ocuparia dos blocos-->
+                        <th colspan="2" bgcolor="cf8acc">Produzido</th>
+            
+                    </tr>
+            
+                    <tr> <!-- coloquei meu nome e o meu e-mail na tabela -->
+                        <td align="center">Ana Vitória Araújo de Souza</td>
+                        <td align="center"><a href="malito:ana.araaujoo10@gmail.com">ana.araaujoo10@gmail.com</a></td>
+            
+                    </tr>
+            
+                    <tr><!-- aqui dei a cor de fundo e define que ele ocuparia dos blocos-->
+                        <th colspan="2" bgcolor="cf8acc">Serviços Técnicos</th> <!-- o colspan 2 é para ocupar a linha intei 2 no caso 2 e use o th -->
+                    </tr>
+            
+                    <tr><!--Aqui defino o nome e o e-mail novamente-->
+                        <td align="center">Ana Vitória Araújo de Souza</td>
+                        <td align="center"><a href="malito:ana.araaujoo10@gmail.com">ana.araaujoo10@gmail.com</a></td>
+                    </tr> <!-- termido da tabela -->
+            
+                </table>
+                <!--aqui tem o link para mais informções sobre a torta de frango -->
+                <a href="https://www.tudogostoso.com.br/receita/1282-torta-de-frango.html" class="button">Clique para ver mais Informações sobre torta de frango</a>
+
+            </div>
+            
+           <!-- Aqui ele deixei o video da produção de uma torta de frango define o tamanho que ele ficaria-->
+            <div class="video">
+                <iframe width="688" height="387" src="https://www.youtube.com/embed/FtsdB5A64i0" title="TORTA DE FRANGO MESCLADA I A MELHOR TORTA QUE VOCÊ JÁ COMEU I Receitas de Pai" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
